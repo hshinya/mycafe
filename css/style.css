@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-header {
+  font-family: 'Garamond';
+}
+
+.page-header h1 {
+  margin-bottom: 200px;
+  padding-top: 36px;
+  color: #fff;
+  font-size: 48px;
+}
+
+.main-nav {
+  font-size: 1.25rem;
+}
+
+.main-nav li {
+  list-style: none;
+  font-size: 24px;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+}
+
+.main-nav a {
+  color: #fff;
+}
+
+.main-nav a:hover {
+  color: #0bd;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.page-header p {
+  margin-top: 36px;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url(../img/coffee5.jpg);
+  min-height: 100vh;
+}
+
+.homeli {
+  border-bottom: #fff solid 1px;
+  width: 65px;
+}
+
+#cafeArea {
+  background-image: url(../img/cafe7.jpg);
+  min-height: 100vh;
+}
+
+.cafe-header {
+  font-family: 'Garamond';
+}
+
+.cafe-header h1{
+  padding-top: 36px;
+  color: #fff;
+  font-size: 48px;
+}
+
+.cafe-nav {
+  display: flex;
+}
+
+.cafe-nav li {
+  letter-spacing: 5px;
+}
+
+.cafeli {
+  border-bottom: #fff solid;
+}
+
+main {
+  background-color: #efeceb;
+}
+
+article img {
+  width: 100%;
+}
+
+.situation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.situation img {
+  height: 250px;
+  width: auto;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.situation2 {
+  background: #fbf9f8;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.situation2 img {
+  height: 250px;
+  width: auto;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.tasty p, .interior p {
+  width: 370px;
+}
+
+
+.tasty a {
+  color: #333;
+}
+
+.tasty a:hover {
+  border-bottom: #333 solid;
+}
+
+.box2 img {
+  height: 400px;
+  width: auto;
+  padding-left: 10%;
+}
+
+main h1 {
+  font-size: 48px;
+  font-family: 'Garamond';
+  font-weight: normal;
+}
+
+main h2 {
+  font-family: 'ＭＳ 明朝';
+  font-size: 18px;
+  font-weight: normal;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.box1 p {
+  width: 60%;
+  text-align: justify;
+  padding-top: 50px;
+}
+
+.box1 {
+  padding: 100px 0;
+}
+
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 50px 0;
+}
+
+.info {
+  width: 60%;
+}
+
+.info h1 {
+  padding-top: 50px;
+}
+
+.info h2 {
+  padding-bottom: 30px;
+}
+
+#foot {
+  background-image: url(../img/coffee8.jpg);
+  min-height: 100vh;
+}
+
+.business {
+  font-family: 'Garamond';
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.fnav {
+  height: 120px;
+  background-color: rgba(20, 20, 20, 0.5);
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fnav a {
+  color: #fff;
+  font-family: 'Garamond';
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
+
+.menuber {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu1 {
+  width: 60%;
+}
+
+.menu2 {
+  width: 30%;
+}
+
+.situation3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.situation3 img {
+  height: 250px;
+  width: auto;
+  margin-top: 30px;
+}
+
+.cafelist {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cafelist p {
+  font-family: 'Garamond';
+  letter-spacing: 2px;
+  line-height: 1.7;
+  padding: 10px 0;
+}
+
+.menuleft {
+  width: 45%;
+}
+
+.menuright {
+  width: 45%;
+}
+
+.menulist {
+  border-bottom: rgba(30, 30, 30, 0.4) solid 0.5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menulist1 {
+  border-top: rgba(30, 30, 30, 0.4) solid 0.5px;
+}
+
+.add {
+  padding: 50px 0;
+  font-family: 'Garamond';
+  font-size: 16px;
+}
+
+#foot2 {
+  background-image: url(../img/coffee2.jpg);
+  min-height: 100vh;
+}
+
+.menubox1, .menuber {
+  background: #fbf9f8;
+}
+
+#cafemenu {
+  background-image: url(../img/coffee7.jpg);
+  min-height: 100vh;
+}
