@@ -9,13 +9,22 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
   </head>
   <body>
+    <div class="mask" id="mask"></div>
     <div id="home" class="big-bg">
       <header class="page-header wrapper">
         <h1>maya coffee</h1>
-        <nav>
-          <ul class="main-nav">
+
+        <a class="menuButton" id="menuButton">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
+
+        <nav id="nav">
+          <ul class="main-nav navnav">
             <li class="homeli"><a href="index.html">Home</a></li>
             <li><a href="cafeArea.html">Cafe area</a></li>
             <li><a href="menu.html">Menu</a></li>
