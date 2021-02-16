@@ -651,6 +651,12 @@ position: relative;
     padding-top: 30%;
   }
 
+  .navnav {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30%;
+  }
+
   nav {
     /* opacity: 0;
     visibility: hidden; */
