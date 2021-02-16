@@ -305,3 +305,388 @@ footer {
   background-image: url(../img/coffee7.jpg);
   min-height: 100vh;
 }
+
+.box1 h1 {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.box1 h1.show {
+  opacity: 1;
+  transform: none;
+}
+
+.box1 h2 {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.box1 h2.show {
+  opacity: 1;
+  transform: none;
+}
+
+.box1 p {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.box1 p.show {
+  opacity: 1;
+  transform: none;
+}
+
+.big img {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.big img.show {
+  opacity: 1;
+  transform: none;
+}
+
+.situation img {
+  position: relative;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: 2s;
+}
+
+.situation img.show {
+  opacity: 1;
+  transform: none;
+}
+
+.box2 h1 {
+  position: relative;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: 2s;
+}
+
+.box2 h1.show {
+  opacity: 1;
+  transform: none;
+}
+
+.box2 h2 {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.box2 h2.show {
+  opacity: 1;
+  transform: none;
+}
+
+.box2 p {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.box2 p.show {
+  opacity: 1;
+  transform: none;
+}
+
+.box2 img {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: 2s;
+}
+
+.box2 img.show {
+  opacity: 1;
+  transform: none;
+}
+
+.situation2 img {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: 2s;
+}
+
+.situation2 img.show {
+  opacity: 1;
+  transform: none;
+}
+
+.situation2 h1 {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.situation2 h1.show {
+  opacity: 1;
+  transform: none;
+}
+
+.situation2 h2 {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.situation2 h2.show {
+  opacity: 1;
+  transform: none;
+}
+
+.situation2 p {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.situation2 p.show {
+  opacity: 1;
+  transform: none;
+}
+ 
+.menuber img {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: 2s;
+}
+
+.menuber img.show {
+  opacity: 1;
+  transform: none;
+}
+
+.situation3 img {
+  position: relative;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: 2s;
+}
+
+.situation3 img.show {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes titleAnimaton {
+  0% {
+    letter-spacing: 1.3em;
+    opacity: 0;
+  }
+}
+
+header h1 {
+  animation: titleAnimaton 1.5s;
+}
+
+.cafemenu h1 {
+position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.cafemenu h1.show {
+  opacity: 1;
+  transform: none;
+}
+
+.cafemenu h2 {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.cafemenu h2.show {
+  opacity: 1;
+  transform: none;
+}
+
+.cafemenu p {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.cafemenu p.show {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 600px) {
+  #cafeArea {
+    width: 100%;
+    min-height: auto;
+  }
+
+  header {
+    overflow: hidden;
+  }
+
+  main {
+    overflow: hidden;
+  }
+
+  footer {
+    overflow: hidden;
+  }
+
+  .box1 p{
+    width: 100%;
+  }
+
+  .box2 {
+    flex-direction: column-reverse;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .situation2 {
+    flex-direction: column;
+  }
+
+  footer {
+    align-items: stretch;
+    padding-top: 40%;
+  }
+
+  .fnav {
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
+
+  .business {
+    flex-direction: column;
+  }
+
+  /* ハンバーガーメニュー */
+  header {
+    height: 300px;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .menuButton {
+    display: block;
+    height: 80px;
+    width: 80px;
+    /* background: skyblue; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.3s;
+    z-index: 3;
+  }
+
+  .menuButton div {
+    height: 1px;
+    width: 60%;
+    background: #fff;
+    position: absolute;/*これは親要素にposition: fixed;があるからok*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+  }
+
+  .menuButton div:nth-of-type(1) {
+    transform: translate(-50%, -15px);
+  }
+
+  .menuButton div:nth-of-type(3) {
+    transform: translate(-50%, 15px);
+  }
+
+  .menuButton.active {
+    transform: rotate(180deg);
+  }
+
+  .menuButton.active div:nth-of-type(1) {
+    transform: rotate(45deg) translate(-50%, 0);
+    transform-origin: 0% 50%;
+  }
+  
+  .menuButton.active div:nth-of-type(2) {
+    opacity: 0;
+    transform: translate(0%, 0%);
+  }
+
+  .menuButton.active div:nth-of-type(3) {
+    transform: rotate(-45deg) translate(-50%, 0);
+    transform-origin: 0% 50%;
+  }
+
+  .cafe-nav {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30%;
+  }
+
+  nav {
+    /* opacity: 0;
+    visibility: hidden; */
+    transform: translateX(100%);
+    transition: 0.3s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(189, 244, 255, 0.5);
+    width: 80%;
+    height: 100%;
+  }
+  
+  nav.active {
+    /* opacity: 1;
+    visibility: visible; */
+    transform: translateX(0%);
+  }
+
+  .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgb(39, 43, 44);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+
+  .mask.active {
+    opacity: 0.7;
+    visibility: visible;
+  }
+
+}

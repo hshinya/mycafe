@@ -4,16 +4,26 @@
     <meta charset="utf-8">
     <title>cafe</title>
     <meta name="description" content="カフェサイトを作ったよ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="js/main.js" defer></script>
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="mask" id="mask"></div>
     <div id="cafeArea" class="big-bg">
       <header class="cafe-header wrapper">
         <h1>maya coffee</h1>
-        <nav>
+
+        <a class="menuButton" id="menuButton">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
+
+        <nav id="nav">
           <ul class="main-nav cafe-nav">
             <li><a href="index.html">Home/</a></li>
             <li class="cafeli"><a href="cafeArea.html">Cafe area</a></li>
@@ -26,38 +36,40 @@
     <main>
       <article>
         <div class="box1">
-          <h1>As your living room</h1>
-          <h2>心地よくリビングのような空間</h2>
-          <p>
+          <h1 class="animationTarget">As your living room</h1>
+          <h2 class="animationTarget">心地よくリビングのような空間</h2>
+          <p class="animationTarget">
             "maya coffee"は「心落ち着き、居心地のいい空間」をコンセプトに、少し特別で、安心できるリビングルームのようなカフェを目指します。コーヒーと食事を楽しむことはもちろん、読書をする、おしゃべりを楽しむ、勉強や仕事に集中するなど、"maya coffee"はそれぞれのスタイルでご利用できるカフェになっています。
           </p>
         </div>
-        <img src="img/cafe5.jpg" alt="カフェでの会話">
+        <div class="big">
+          <img src="img/cafe5.jpg" alt="カフェでの会話" class="animationTarget">
+        </div>
         <div class="situation">
-          <img src="img/cafe14.jpg" alt="カフェでの仕事">
-          <img src="img/cafe12.jpg" alt="カフェでの机">
+          <img src="img/cafe14.jpg" alt="カフェでの仕事" class="animationTarget">
+          <img src="img/cafe12.jpg" alt="カフェでの机" class="animationTarget">
         </div>
         <div class="box2">
-          <img src="img/coffeeb.jpg" alt="コーヒーを注ぐ">
+          <img src="img/coffeeb.jpg" alt="コーヒーを注ぐ" class="animationTarget">
           <div class="info">
-            <h1>Family, With friends, Separately</h2>
-            <h2>家族と、友人と、お一人で</h2>
-            <p>みなさんの憩いの場として、家族との時間として、友達とのだんらんの場所として、１人だけの時間として、maya coffeeはみなさんにとって心地よい空間を提供させていただきます。休日や仕事前後に、学校帰りや勉強をする時間に。みなさんの生活を豊かにする快適な空間を作っていきます。</p>
+            <h1 class="animationTarget">Family, With friends, Separately</h2>
+            <h2 class="animationTarget">家族と、友人と、お一人で</h2>
+            <p class="animationTarget">みなさんの憩いの場として、家族との時間として、友達とのだんらんの場所として、１人だけの時間として、maya coffeeはみなさんにとって心地よい空間を提供させていただきます。休日や仕事前後に、学校帰りや勉強をする時間に。みなさんの生活を豊かにする快適な空間を作っていきます。</p>
           </div>
         </div>
         <div class="situation2">
           <div class="tasty">
-            <img src="img/coffee15.jpg" alt="デスク">
-            <h1>Tasty coffee</h1>
-            <h2>おいしいコーヒー</h2>
-            <p>マスターのこだわりぬいた豆を使ったおいしいコーヒーとなっています。楽しいひと時のおともに1杯どうですか？</p>
+            <img src="img/coffee15.jpg" alt="デスク" class="animationTarget">
+            <h1 class="animationTarget">Tasty coffee</h1>
+            <h2 class="animationTarget">おいしいコーヒー</h2>
+            <p class="animationTarget">マスターのこだわりぬいた豆を使ったおいしいコーヒーとなっています。楽しいひと時のおともに1杯どうですか？</p>
             <a href="menu.html">More...</a>
           </div>
           <div class="interior">
-            <img src="img/cafe1.jpg" alt="店内">
-            <h1>Interior design</h1>
-            <h2>落ち着くインテリアデザイン</h2>
-            <p>落ち着いた雰囲気のデザインになっており、みなさんの特別な時間をより良いものにします。リラックスしてご利用していただけます。</p>
+            <img src="img/cafe1.jpg" alt="店内" class="animationTarget">
+            <h1 class="animationTarget">Interior design</h1>
+            <h2 class="animationTarget">落ち着くインテリアデザイン</h2>
+            <p class="animationTarget">落ち着いた雰囲気のデザインになっており、みなさんの特別な時間をより良いものにします。リラックスしてご利用していただけます。</p>
             <p></p>
           </div>
         </div>
@@ -66,9 +78,9 @@
     <footer id="foot" class="big-bg">
       <div class="fnav">
         <div class="business">
-          <p>Saturday,Sunday,holiday AM7:00-PM21:00</p>
-          <p>/ Monday-Friday AM9:00-PM21:00 </p>
-          <p> Tel.012-0000-XXXX </p>
+          <p class="businessp">Saturday,Sunday,holiday AM7:00-PM21:00</p>
+          <p class="businessp">/ Monday-Friday AM9:00-PM21:00 </p>
+          <p class="businessp"> Tel.012-0000-XXXX </p>
         </div>
         <a href="index.html">maya coffee</a>
       </div>
